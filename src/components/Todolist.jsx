@@ -1,13 +1,19 @@
 import TodoListItem from './TodoListItem';
-
+import React, { useContext, useState } from 'react';
+import context from '../data';
 
 const Todolist = () => {
-    
-  return <>
-    <ul>
-        <TodoListItem/>
-    </ul>
-  </>
-}
+  const { todos } = useContext(context);
 
-export default Todolist
+  return (
+    <>
+      <ul>
+        {todos.map((todo) => (
+          <TodoListItem key={todo.id} id={todo.id} checked={todo.checked} name={todo.name} />
+        ))}
+      </ul>
+    </>
+  );
+};
+
+export default Todolist;
