@@ -1,7 +1,30 @@
+body {
+  background-color: #ccc;
+}
+.input {
+  margin-left: 10px;
+}
+.add {
+  background-color: blue;
+  color: white;
+}
 li {
   width: 300px;
   align-content: space-between;
 }
+.checked {
+  color: red;
+}
+span {
+  margin-right: auto;
+}
 button {
   margin-left: 10px;
+}
+.check {
+  background-color: green;
+  color: white;
+}
+.delete {
+  background-color: red;
 }
