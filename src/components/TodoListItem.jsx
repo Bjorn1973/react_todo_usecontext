@@ -6,9 +6,11 @@ const TodoListItem = ({ id, name, checked }) => {
 
   return (
     <li className={checked ? 'checked' : ''}>
-      <span>{name}</span>
-      <button className="check" onClick={() => toggleTodo(id)}>{checked ? 'uncheck' : 'check'}</button>
-      <button className="delete" onClick={() => deleteTodo(id)}>delete</button>
+      <span className="wrapper">
+        <span>{name}</span>
+       <button className="check" onClick={() => toggleTodo(id)}>{checked ? 'uncheck' : 'check'}</button>
+       <button className="delete" onClick={() => deleteTodo(id)}>delete</button>
+      </span>
     </li>
   );
 };

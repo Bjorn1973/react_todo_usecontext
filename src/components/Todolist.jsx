@@ -7,6 +7,7 @@ const Todolist = () => {
 
   return (
     <>
+      <h1>TODOLIST</h1>
       <ul>
         {todos.map((todo) => (
           <TodoListItem key={todo.id} id={todo.id} checked={todo.checked} name={todo.name} />

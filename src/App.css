@@ -1,16 +1,23 @@
 body {
   background-color: #ccc;
+  padding: 10px;
 }
-.input {
-  margin-left: 10px;
-}
+
 .add {
   background-color: blue;
   color: white;
 }
+h1 {
+  margin-left: ;
+}
 li {
   width: 300px;
   align-content: space-between;
+  margin-bottom: 5px;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 .checked {
   color: red;
