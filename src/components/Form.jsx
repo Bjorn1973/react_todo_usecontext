@@ -18,7 +18,7 @@ const Form = () => {
     }}>
 
         <input type="text" onInput={handleInputTodo}/>
-        <button >Add</button>
+        <button onClick={addTodo()}>Add</button>
     </form>
     </>
 }

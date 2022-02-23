@@ -1,11 +1,11 @@
-// import TodoListItem from './TodoListItem';
+import TodoListItem from './TodoListItem';
 
 
 const Todolist = () => {
     
   return <>
     <ul>
-        {/* <TodoListItem/> */}
+        <TodoListItem/>
     </ul>
   </>
 }

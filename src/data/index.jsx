@@ -13,6 +13,7 @@ export const Provider = ({children})=>{
 
     const data = {
         todos: todos,
+        setTodos: setTodos,
         addTodo: (todo)=>{
             setTodos([...todos, {id:nanoid(),checked:false,name:todo}])
         },
@@ -25,7 +26,7 @@ export const Provider = ({children})=>{
                 return todo;
             })
         )
-        }
+        return todos}
     }
     return <dataContext.Provider value={data}>{children}</dataContext.Provider>
 }
