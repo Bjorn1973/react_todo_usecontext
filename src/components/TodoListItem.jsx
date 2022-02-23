@@ -1,15 +1,20 @@
-import React, {useContext} from 'react';
+import React, {useContext,useEffect} from 'react';
 import context from '../data';
 
 const TodoListItem = () => {
-    const {todo, deleteTodo, toggleTodo} = useContext(context);
+  
+    const {todos, deleteTodo, toggleTodo} = useContext(context);
+    console.log(todos)
+
+  
 
   return (
+    todos.map(todo =>
     <li key={todo.id} className={todo.checked? "checked": ""}>
         <span >{todo.name}</span>
         <button onClick={toggleTodo(todo.id)}>{todo.checked? "uncheck" : "check"}</button>
         <button onClick={deleteTodo(todo.id)}>delete</button>
-    </li>
+    </li>)
   )
 }
 

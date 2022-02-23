@@ -18,7 +18,7 @@ const Todolist = () => {
         <TodoListItem
         key={todo.id}
         className={todo.checked}
-        todo={todo}
+        todo={todo.name}
         toggleTodo={toggleTodo}
         deleteTodo={deleteTodo}
           />
